@@ -2,7 +2,7 @@
 2022/3/14 ~ 作成開始
 
 ## 構想
-とりあえずSPAで静的配信、APIGW+LambdaでAPIを構築してサーバーレスにするつもり（時間単位の課金が怖いため）
+Next.jsでISRしたものをAmplifyにデプロイ、APIはAPIGW+Lambdaでサーバーレス
 
 ドメインはtoiki.netを取得済み
 
