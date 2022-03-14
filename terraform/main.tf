@@ -20,6 +20,12 @@ provider "aws" {
   profile = "personal-toiki"
 }
 
+provider "aws" {
+  alias   = "us_east_1"
+  region  = "us-east-1"
+  profile = "personal-toiki"
+}
+
 resource "aws_s3_bucket" "terraform_state" {
   bucket = "toiki-terraform-state"
   acl    = "private"
