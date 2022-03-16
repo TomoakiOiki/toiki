@@ -1,8 +1,16 @@
+variable "vercel_token" {}
+variable "repository_name" {}
+variable "vercel_project_name" {}
+
 terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 3.0"
+    }
+    vercel = {
+      source  = "chronark/vercel"
+      version = "0.14.4"
     }
   }
   backend "s3" {
@@ -12,6 +20,11 @@ terraform {
     profile = "personal-toiki"
     encrypt = true
   }
+}
+
+
+provider "vercel" {
+  token = var.vercel_token
 }
 
 # Configure the AWS Provider
