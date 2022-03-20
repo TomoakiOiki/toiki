@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['next', 'next/core-web-vitals', 'prettier'],
+  extends: ['next/core-web-vitals', 'prettier'],
   rules: {
     semi: 'error',
     'import/prefer-default-export': 'off',
