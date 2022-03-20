@@ -1,5 +1,6 @@
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { Menu, MenuButton, MenuList, MenuItem, Link } from '@chakra-ui/react';
+import { PageInfo, pageList } from '../utils/pages';
 
 const PulldownMenu: React.FC = () => {
   return (
@@ -8,28 +9,19 @@ const PulldownMenu: React.FC = () => {
         <ChevronDownIcon />
       </MenuButton>
       <MenuList>
-        <MenuItem as={Link} href='about' _hover={{ textDecoration: 'none' }}>
-          About me
-        </MenuItem>
-        <MenuItem as={Link} href='memo' _hover={{ textDecoration: 'none' }}>
-          Memo
-        </MenuItem>
-        <MenuItem
-          as={Link}
-          href='https://twitter.com/kn_prg'
-          _hover={{ textDecoration: 'none' }}
-          isExternal
-        >
-          Twitter
-        </MenuItem>
-        <MenuItem
-          as={Link}
-          href='https://github.com/TomoakiOiki'
-          _hover={{ textDecoration: 'none' }}
-          isExternal
-        >
-          Github
-        </MenuItem>
+        {pageList.map((page: PageInfo, index) => {
+          return (
+            <MenuItem
+              key={page.title}
+              as={Link}
+              href={page.url}
+              _hover={{ textDecoration: 'none' }}
+              isExternal={page.isExternal}
+            >
+              {page.title}
+            </MenuItem>
+          );
+        })}
       </MenuList>
     </Menu>
   );
