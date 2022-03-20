@@ -14,7 +14,7 @@ import BreadCrumb from './BreadCrumb';
 
 const Header: React.FC = () => {
   return (
-    <Box h={'10%'}>
+    <Box h={'10%'} marginBottom='24px'>
       <BreadCrumb />
     </Box>
   );
