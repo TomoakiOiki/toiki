@@ -1,6 +1,6 @@
-import { Box, Center } from "@chakra-ui/react";
-import type { NextPage } from "next";
-import Head from "next/head";
+import { Box, Center } from '@chakra-ui/react';
+import type { NextPage } from 'next';
+import Head from 'next/head';
 
 const About: NextPage = () => {
   return (
