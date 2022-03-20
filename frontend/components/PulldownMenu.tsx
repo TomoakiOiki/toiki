@@ -14,25 +14,21 @@ const PulldownMenu: React.FC = () => {
         <MenuItem as={Link} href='memo' _hover={{ textDecoration: 'none' }}>
           Memo
         </MenuItem>
-        <MenuItem>
-          <Link
-            as={Link}
-            href='https://twitter.com/kn_prg'
-            _hover={{ textDecoration: 'none' }}
-            isExternal
-          >
-            Twitter
-          </Link>
+        <MenuItem
+          as={Link}
+          href='https://twitter.com/kn_prg'
+          _hover={{ textDecoration: 'none' }}
+          isExternal
+        >
+          Twitter
         </MenuItem>
-        <MenuItem>
-          <Link
-            as={Link}
-            href='https://github.com/TomoakiOiki'
-            _hover={{ textDecoration: 'none' }}
-            isExternal
-          >
-            Github
-          </Link>
+        <MenuItem
+          as={Link}
+          href='https://github.com/TomoakiOiki'
+          _hover={{ textDecoration: 'none' }}
+          isExternal
+        >
+          Github
         </MenuItem>
       </MenuList>
     </Menu>
