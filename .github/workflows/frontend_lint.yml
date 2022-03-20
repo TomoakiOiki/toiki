@@ -4,7 +4,10 @@ on:
     branches:
       - master
 jobs:
-  test:
+  lint:
+    defaults:
+      run:
+        working-directory: frontend
     name: Check the source code
     runs-on: ubuntu-latest
     steps:
