@@ -15,14 +15,7 @@ const Home: NextPage = () => {
         <Profile />
         <VStack marginX='32px'>
           {pageList.map((page: PageInfo, index) => {
-            return (
-              <PageLink
-                key={index}
-                title={page.title}
-                desc={page.description}
-                url={page.url}
-              />
-            );
+            return <PageLink key={index} {...page} />;
           })}
         </VStack>
       </Box>
