@@ -14,7 +14,7 @@ const About: NextPage<MemoPageProps> = (props) => {
       <Head>
         <title>Memo | toiki</title>
       </Head>
-      <Box marginX='20%'>
+      <Box marginX='16%'>
         <VStack marginX='32px'>
           {props.memos.map((memo, index) => {
             return <MemoItem key={index} {...memo} />;
