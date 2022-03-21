@@ -37,7 +37,6 @@ export const getStaticProps = async ({ params }: Params) => {
         content,
       },
     },
-    revalidate: 10,
   };
 };
 
