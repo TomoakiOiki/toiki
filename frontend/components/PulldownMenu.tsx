@@ -12,7 +12,7 @@ const PulldownMenu: React.FC = () => {
         {pageList.map((page: PageInfo, index) => {
           return (
             <MenuItem
-              key={page.title}
+              key={index}
               as={Link}
               href={page.url}
               _hover={{ textDecoration: 'none' }}

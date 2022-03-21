@@ -23,7 +23,7 @@ const BreadCrumb: React.FC = () => {
             /
           </Text>
           <Link
-            href={breadcrumb[1]}
+            href={`/${breadcrumb[1]}`}
             fontSize='xl'
             _hover={{ textDecoration: 'none' }}
             marginRight='8px'

@@ -7,14 +7,14 @@ export type PageInfo = {
 export const pageList: PageInfo[] = [
   {
     title: 'About me',
-    description: 'Self introduction.Likes, hobbies, etc.',
-    url: 'about',
+    description: 'Self introduction. Likes, hobbies, etc.',
+    url: '/about',
     isExternal: false,
   },
   {
     title: 'Memo',
     description: 'Memo for sharing my thoughts. Like a blog.',
-    url: 'memo',
+    url: '/memo',
     isExternal: false,
   },
   {
