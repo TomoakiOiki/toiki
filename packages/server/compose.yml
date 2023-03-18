@@ -2,7 +2,7 @@ services:
   lambda-local:
     build: .
     ports:
-      - '9000:8080'
+      - "8888:8888"
     environment:
       NOTION_API_KEY: ${NOTION_API_KEY}
       NOTION_DATABASE_ID: ${NOTION_DATABASE_ID}

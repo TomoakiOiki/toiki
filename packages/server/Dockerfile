@@ -4,4 +4,4 @@ COPY . .
 
 RUN npm ci
 
-CMD ["index.handler"]
+CMD ["npm","run","watch"]

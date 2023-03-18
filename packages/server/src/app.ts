@@ -1,17 +1,18 @@
 import express from "express";
-import serverlessExpress from "aws-serverless-express";
-import { APIGatewayProxyEvent, Context } from "aws-lambda";
+import { json } from "body-parser";
 
 const app = express();
-app.use(express.json());
 
-app.get("/fetchNotionData", async (req, res) => {
-  // Notion APIを叩いてデータを取得する処理を実装
-  res.json({ message: "Data fetched from Notion API" });
+app.use(json());
+
+const port = process.env.PORT || 8888;
+
+app.get("/", (req, res) => {
+  res.json("Hello World!");
 });
 
-const server = serverlessExpress.createServer(app);
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
 
-export async function handler(event: APIGatewayProxyEvent, context: Context) {
-  return serverlessExpress.proxy(server, event, context);
-}
+export { app };
