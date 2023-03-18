@@ -1,6 +1,6 @@
-import { getMemoByFile, getAllMemo } from '../../api/memo';
+import { getMemoByFile, getAllMemo } from '../../client/memo';
 import Head from 'next/head';
-import { markdownToHtml } from '../../api/markdown';
+import { markdownToHtml } from '../../client/markdown';
 import MemoType from '../../types/memo';
 
 type Props = {

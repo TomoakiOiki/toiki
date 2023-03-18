@@ -1,7 +1,7 @@
 import { Box, Center, VStack } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { getAllMemo } from '../api/memo';
+import { getAllMemo } from '../client/memo';
 import MemoItem, { MemoItemProps } from '../modules/MemoItem';
 
 type MemoPageProps = {
