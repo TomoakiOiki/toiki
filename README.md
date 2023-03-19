@@ -1,16 +1,5 @@
 # toiki
 
-toiki の個人ページプロジェクトです。
+toiki の個人ページです。
 
 URL: https://toiki.net/
-
-## 技術スタック
-
-- フロントエンド
-  - Next.ts
-  - jotai
-  - Chakra UI
-- インフラ
-  - aws
-  - vercel
-  - terraform
