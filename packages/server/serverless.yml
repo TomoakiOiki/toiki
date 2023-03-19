@@ -3,7 +3,7 @@ provider:
   name: aws
   runtime: nodejs14.x
   stage: ${opt:stage, 'dev'}
-  region: us-east-1
+  profile: personal-toiki
   memorySize: 256
   timeout: 10
 
@@ -12,12 +12,12 @@ functions:
     handler: dist/index.handler
     events:
       - http:
-          path: /
-          method: ANY
+          path: /articles
+          method: GET
           cors: true
       - http:
-          path: /{proxy+}
-          method: ANY
+          path: /article/{id}
+          method: GET
           cors: true
 
 plugins:

@@ -1,11 +1,5 @@
-.PHONY: build
+.PHONY: deploy
 
-build:
-	docker compose build
-
-.PHONY: run-server
-
-run-server:
-	docker compose up
-
+deploy:
+	npm run deploy
 
